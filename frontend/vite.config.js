@@ -2,7 +2,6 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
-// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -15,7 +14,7 @@ export default defineConfig({
     }
   },
   build: {
-    outDir: '../backend/src/main/resources/static',
+    outDir: 'dist',
     emptyOutDir: true
   }
 })
